@@ -2,13 +2,25 @@
 
 # Fixed for my book Webbserverprogrammering 1
 
+# Detta skript ska köras inuti din virtuella maskin
+if [[ $HOSTNAME != "homestead" ]]
+then
+    echo "Skriptet ska köras inuti din virtuella maskin (homestead)"
+    exit 1
+fi
+
 cd ~/webprojects
+if [[ $PWD != "webprojects" ]]
+then
+    echo "Mappen webprojects saknas"
+    exit 1
+fi
 
 # TODO Always get latest version
-echo 'laddar ner phpMyAdmin 4.6.4'
+echo 'Laddar ner phpMyAdmin 4.6.4'
 curl -#L https://files.phpmyadmin.net/phpMyAdmin/4.6.4/phpMyAdmin-4.6.4-all-languages.tar.xz -o phpmyadmin.tar.xz
 
-echo 'packar upp phpMyAdmin'
+echo 'Packar upp phpMyAdmin'
 mkdir phpmyadmin && tar xf phpmyadmin.tar.xz -C phpmyadmin --strip-components 1
 
 rm phpmyadmin.tar.xz
