@@ -14,7 +14,7 @@ on a Laravel Homestead box. Adapted for my book Webbserverprogrammering 1
 4. Öppna `hosts` på din värddator och lägg till raden:
 ```192.168.10.10  phpmyadmin.app```
 
-5. Go to [http://phpmyadmin.app](http://phpmyadmin.app). Ange användarnamnet "Homestead" och lösenordet "secret".
+5. Go to [http://phpmyadmin.app](http://phpmyadmin.app). Ange användarnamnet `Homestead` och lösenordet `secret`.
 
 ## License
 
