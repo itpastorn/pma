@@ -1,19 +1,22 @@
 ## About
 
 Simple shell script that automatically installs the latest version of PhpMyAdmin
-on a Laravel Homestead box.
+on a Laravel Homestead box. Adapted for my book Webbserverprogrammering 1
 
-## Usage
+## Hur du använder detta
 
-1. SSH into your Homestead box and `cd` to your code/projects directory
+1. Se till att du installerat VirtualBox, Vagrant och Homestead Improved enligt anvinsningarna i boken
 
-2. `$ curl -sS https://raw.githubusercontent.com/grrnikos/pma/master/pma.sh | sh`
+2. När din Homestead maskin är igång, skriv `vagrant ssh`
 
-3. Open the `/etc/hosts` file on your main machine and add
-```127.0.0.1  phpmyadmin.app```
+3. `$ curl -sS https://raw.githubusercontent.com/itpastorn/pma/master/pma.sh | sh`
 
-4. Go to [http://phpmyadmin.app:8000](http://phpmyadmin.app:8000)
+4. Öppna `hosts` på din värddator och lägg till raden:
+```192.168.10.10  phpmyadmin.app```
+
+5. Go to [http://phpmyadmin.app](http://phpmyadmin.app). Ange användarnamnet "Homestead" och lösenordet "secret".
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+Originalet finns på https://github.com/grrnikos/pma
