@@ -24,4 +24,4 @@ fi
 sudo bash $CMD phpmyadmin.app $(pwd)/phpmyadmin
 sudo nginx -s reload
 
-echo 'Färdig. Lägg till 192.168.10.10 phpmyadmin.app i din hosts-fil'
+echo 'Färdig. Lägg till 192.168.10.10 phpmyadmin.app i din värddators hosts-fil'
