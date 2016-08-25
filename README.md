@@ -5,7 +5,7 @@ on a Laravel Homestead box. Adapted for my book Webbserverprogrammering 1
 
 ## Hur du använder detta
 
-1. Se till att du installerat VirtualBox, Vagrant och Homestead Improved enligt anvinsningarna i boken
+1. Se till att du installerat VirtualBox, Vagrant och Homestead Improved enligt anvisningarna i boken och med hjälp av [tillhörande projekt här på GitHub](https://github.com/itpastorn/webbutveckling-1-flex-studentfiles)
 
 2. När din Homestead maskin är igång, skriv `vagrant ssh`
 
