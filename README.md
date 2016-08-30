@@ -9,7 +9,7 @@ on a Laravel Homestead box. Adapted for my book Webbserverprogrammering 1
 
 2. När din Homestead maskin är igång, skriv `vagrant ssh`
 
-3. `$ curl -sS https://raw.githubusercontent.com/itpastorn/pma/master/pma.sh | sh`
+3. `$ curl -sS https://raw.githubusercontent.com/itpastorn/pma/master/pma.sh | bash`
 
 4. Öppna `hosts` på din värddator och lägg till raden:
 ```192.168.10.10  phpmyadmin.app```
